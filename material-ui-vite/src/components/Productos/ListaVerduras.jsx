@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "@mui/material/Button";
+import { Divider } from "@mui/material";
 
 export default function ListaVerduras() {
   const verduras = [
@@ -59,13 +60,60 @@ export default function ListaVerduras() {
             <ul>
               <li>
                 {verdura.id} | {verdura.nombre} | {verdura.descripcion} | $
-                {verdura.precio}  <Button onClick={()=>alert(`El stock es de: ${verdura.Cantidad}`)} variant="contained" color="primary">Ver stock</Button>
+                {verdura.precio}{" "}
+                <Button
+                  onClick={() => alert(`El stock es de: ${verdura.Cantidad}`)}
+                  variant="contained"
+                  color="primary"
+                >
+                  Ver stock
+                </Button>
               </li>
             </ul>
           </div>
         ))
       ) : (
-        <p>No hay datos disponibles.</p> 
+        <p>No hay datos disponibles.</p>
+      )}
+
+      <Divider color="secondary" />
+
+      {verduras.length > 0 && (
+        <div>
+          <h3>Vista en tabla</h3>
+          <table border="1">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Acción</th>
+              </tr>
+            </thead>
+            <tbody>
+              {verduras.map((verdura, index) => (
+                <tr key={index}>
+                  <td>{verdura.id}</td>
+                  <td>{verdura.nombre}</td>
+                  <td>{verdura.descripcion}</td>
+                  <td>${verdura.precio}</td>
+                  <td>
+                    <Button
+                      onClick={() =>
+                        alert(`El stock es de: ${verdura.Cantidad}`)
+                      }
+                      variant="contained"
+                      color="primary"
+                    >
+                      Ver stock
+                    </Button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       )}
     </div>
   );
