@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import Switch from '@mui/material/Switch'
-import { Typography } from '@mui/material'
+import { Divider, Typography } from '@mui/material'
+import ListaVerduras from './Productos/ListaVerduras'
 
 const ListaProductos = () => {
     const [home, setHome]=useState(false)
@@ -21,10 +22,11 @@ const ListaProductos = () => {
           
         />
 
-        {
-            <Typography variant={home ? "h3":"h6"} color={home ? "success":"error"}>{home ? "Encendido":"Apagado"}</Typography>
-        }
-
+        
+          <Typography variant={home ? "h3":"h6"} color={home ? "success":"error"}>{home ? "Encendido":"Apagado"}</Typography>
+        
+          <Divider color='secondary'/>
+          <ListaVerduras/>
     </div>
   )
 }
