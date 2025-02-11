@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "@mui/material/Button";
 import { Divider } from "@mui/material";
+import VerduraSelect from "./VerduraSelect";
 
 export default function ListaVerduras() {
   const verduras = [
@@ -115,6 +116,13 @@ export default function ListaVerduras() {
           </table>
         </div>
       )}
+       <br />
+      <Divider color="Secondary"/>
+    
+      <h2>Select</h2>
+      <VerduraSelect/>
+      <br />
+
     </div>
   );
 }
