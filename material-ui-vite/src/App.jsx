@@ -3,6 +3,7 @@ import * as React from 'react';
 import ComponenteEncabezado from './components/Subtrama/ComponenteEncabezado';
 import { AlumnoPromedio } from './components/AlumnoPromedio';
 import ListaProductos from './components/ListaProductos';
+import MiProyecto from './components/miproyecto/MiProyecto';
 
 
 export default function App() {
@@ -13,7 +14,8 @@ export default function App() {
     <>
     <ComponenteEncabezado/>
     {/* <AlumnoPromedio/> */}
-    <ListaProductos/>
+    {/* <ListaProductos/> */}
+    <MiProyecto/>
     
     </>
   );
