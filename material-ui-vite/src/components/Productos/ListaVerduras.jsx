@@ -2,8 +2,58 @@ import React from "react";
 import Button from "@mui/material/Button";
 import { Divider } from "@mui/material";
 import VerduraSelect from "./VerduraSelect";
+import ListaProductoDialogo from "./ListaProductoDialogo";
+
 
 export default function ListaVerduras() {
+
+  const data = {
+    store: {
+      book: [
+        {
+          category: "reference",
+          author: "Nigel Rees",
+          title: "Sayings of the Century",
+          price: 8.95,
+          instock: true,
+          sold: false,
+        },
+        {
+          category: "fiction",
+          author: "Evelyn Waugh",
+          title: "Sword of Honour",
+          price: 12.99,
+          instock: false,
+          sold: true,
+        },
+        {
+          category: "fiction",
+          author: "Herman Melville",
+          title: "Moby Dick",
+          isbn: "0-553-21311-3",
+          price: 8.99,
+          instock: true,
+          sold: false,
+        },
+        {
+          category: "fiction",
+          author: "J. R. R. Tolkien",
+          title: "The Lord of the Rings",
+          isbn: "0-395-19395-8",
+          price: 22.99,
+          instock: false,
+          sold: false,
+        },
+      ],
+      bicycle: {
+        color: "red",
+        price: 19.95,
+        instock: true,
+        sold: false,
+      },
+    },
+  } 
+
   const verduras = [
     {
       id: "1",
@@ -122,6 +172,10 @@ export default function ListaVerduras() {
       <h2>Select</h2>
       <VerduraSelect/>
       <br />
+      
+      <Divider color="primary"/>
+      <ListaProductoDialogo data={data.store}/>
+
 
     </div>
   );
