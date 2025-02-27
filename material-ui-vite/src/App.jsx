@@ -6,6 +6,7 @@ import ListaProductos from './components/ListaProductos';
 import MiProyecto from './components/miproyecto/MiProyecto';
 import { Home } from '@mui/icons-material';
 import HomePage from './pages/HomePage';
+import HomeSub from './pages/HomeSub';
 
 
 export default function App() {
@@ -18,7 +19,7 @@ export default function App() {
     {/* <AlumnoPromedio/> */}
     {/* <ListaProductos/> */}
     {/* <MiProyecto/> */}
-    <HomePage/>
+    <HomeSub/>
     
     </>
   );
