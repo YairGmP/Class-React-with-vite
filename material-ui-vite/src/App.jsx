@@ -7,7 +7,7 @@ import MiProyecto from './components/miproyecto/MiProyecto';
 import { Home } from '@mui/icons-material';
 import HomePage from './pages/HomePage';
 import HomeSub from './pages/HomeSub';
-import AppRoutes from './mipagina/home/AppRoutes';
+import AppRoutes from './mipagina/AppRoutes';
 
 
 export default function App() {

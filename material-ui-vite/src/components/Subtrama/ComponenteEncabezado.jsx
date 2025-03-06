@@ -12,6 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { Link } from 'react-router';
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -112,15 +113,17 @@ function ComponenteEncabezado() {
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
-            ))}
+            
+            <Button component={Link} to='/' onClick={handleCloseNavMenu} sx={{my: 2, color: 'white', display: 'block'}}>
+               Home
+            </Button>
+            <Button component={Link} to='/About' onClick={handleCloseNavMenu} sx={{my: 2, color: 'white', display: 'block'}}>
+               About
+            </Button>
+            <Button component={Link} to='/Contact' onClick={handleCloseNavMenu} sx={{my: 2, color: 'white', display: 'block'}}>
+               Contact
+            </Button>
+            
           </Box>
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
