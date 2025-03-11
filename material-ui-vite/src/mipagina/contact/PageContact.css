@@ -1,0 +1,42 @@
+.contact-section {
+  padding: 2rem;
+}
+
+.contact-content {
+  display: flex;
+  gap: 2rem; /* Espacio entre el formulario y el mapa */
+}
+
+.contact-form,
+.contact-map {
+  flex: 1; /* Ambos elementos ocupan el mismo espacio */
+}
+
+.contact-form {
+  max-width: 600px; /* Ancho máximo del formulario */
+}
+
+.contact-field {
+  margin-bottom: 1rem;
+}
+
+.contact-button {
+  margin-top: 1rem;
+  background-color: #1976d2; /* Color del botón */
+  color: white;
+}
+
+.success-message {
+  color: green;
+  margin-top: 1rem;
+}
+
+.map-title {
+  margin-bottom: 1rem;
+}
+
+.map-frame {
+  width: 100%;
+  height: 400px; /* Altura del mapa */
+  border: 0;
+}

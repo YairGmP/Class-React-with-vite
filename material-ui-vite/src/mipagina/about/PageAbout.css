@@ -1,0 +1,146 @@
+/* Estilo general */
+.portfolio-container {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  /* Sección de perfil */
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #1cd4e5;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-top: 20px;
+  }
+  
+  /* Sección de educación y experiencia */
+  .section-subtitle {
+    font-size: 1.5rem;
+    color:#63f2ff;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .description ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .description ul li {
+    margin-bottom: 5px;
+  }
+  
+  /* Sección de habilidades */
+  .skills-title {
+    font-size: 2rem;
+    color: #63f2ff;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  
+  /* Sección de contacto */
+  .contact-title {
+    font-size: 2rem;
+    color:  #63f2ff;
+    margin-bottom: 15px;
+  }
+  
+  /* Fondo de la página */
+  .background {
+    background-image: url('https://wallpapercave.com/wp/wp2918400.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(70%);
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+  }
+  
+  /* Estilo para el contenedor de texto */
+  .portfolio-container {
+    text-align: center;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+    border-color: #63f2ff;
+  }
+  
+  @media (max-width: 600px) {
+    .portfolio-container {
+      padding: 1.5rem;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  
+    .subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  
+    .skill-link {
+      width: 80px;
+    }
+  
+    .contact-title {
+      font-size: 1.5rem;
+    }
+  
+    .skill-icon {
+      width: 50px;
+      height: 50px;
+    }
+  }

@@ -117,11 +117,17 @@ function ComponenteEncabezado() {
             <Button component={Link} to='/' onClick={handleCloseNavMenu} sx={{my: 2, color: 'white', display: 'block'}}>
                Home
             </Button>
+            <Button component={Link} to='/homesub' onClick={handleCloseNavMenu} sx={{my: 2, color: 'white', display: 'block'}}>
+               Recipes
+            </Button>
             <Button component={Link} to='/About' onClick={handleCloseNavMenu} sx={{my: 2, color: 'white', display: 'block'}}>
                About
             </Button>
             <Button component={Link} to='/Contact' onClick={handleCloseNavMenu} sx={{my: 2, color: 'white', display: 'block'}}>
                Contact
+            </Button>
+            <Button component={Link} to='./folio' onClick={handleCloseNavMenu} sx={{my: 2, color: 'white', display: 'block'}}>
+               Folio comida
             </Button>
             
           </Box>
